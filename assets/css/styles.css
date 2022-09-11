@@ -35,4 +35,13 @@ header h1 {
 body {
     display: flex;
     flex-direction: column;
+    background-color: #fff;
+}
+
+.content {
+    display: flex;
+    margin: 0 2em 4em;
+    padding: 2em;
+    background-color: #f2efef;
+    align-items: center;
 }
