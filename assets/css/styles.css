@@ -5,7 +5,7 @@
 header {
     display: flex;
     padding: 3em 0;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
     justify-content: space-between;
     align-items: center;
     color: #fff;
@@ -13,7 +13,7 @@ header {
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 3.25em;
 }
 
 .head-nav ul {
@@ -46,4 +46,8 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: #f2efef;
+}
+
+.content h2 {
+    font-size: 1.5em;
 }
