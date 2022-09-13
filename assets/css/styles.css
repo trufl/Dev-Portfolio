@@ -1,0 +1,139 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 3em 0;
+    margin-bottom: 3em;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(to top left, #0000FF, #bfcfff);
+}
+
+header h1 {
+    font-size: 3.25em;
+}
+
+.head-nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.head-nav li {
+    margin: 0 .5em;
+}
+
+.head-nav a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-card {
+    margin: 0 2em 4em;
+    padding: 2em;
+}
+
+
+.content-card h2 {
+    font-size: 2.5em;
+}
+
+#about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#my-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#avatar-pic {
+    width: 300px;
+    height: 175px;
+}
+
+#my-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    background-color: #f2efef;
+    padding: 2em;
+    flex-wrap: wrap;
+}
+
+#projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#projects h2 {
+    height: 45px;
+    width: 350px;
+}
+
+#project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f2efef;
+    width: 75%;
+}
+
+#project-list li {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    margin: 1em 2em;
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-link {
+    text-decoration: none;
+    color: black;
+}
+
+.project-link:hover {
+    cursor: pointer;
+    color: #0000FF;
+}
+
+.project-link:focus {
+    background-color: aquamarine;
+    border: #0000FF, 2px;
+    padding: 2px;
+}
+
+footer {
+    display: block;
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f2efef;
+}
+
+footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
