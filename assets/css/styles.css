@@ -9,7 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    background-color: rgb(255, 164, 67);
+    background-image: linear-gradient(to top left, #0000FF, #bfcfff);
 }
 
 header h1 {
@@ -30,6 +30,7 @@ header h1 {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+    padding: 10px;
 }
 
 body {
@@ -46,6 +47,11 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: #f2efef;
+}
+
+#avatar-pic {
+    width: 20%;
+    height: 25%;
 }
 
 .content h2 {
