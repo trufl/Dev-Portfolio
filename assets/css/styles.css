@@ -33,7 +33,7 @@ header h1 {
     padding: 10px;
 }
 
-body {
+#content {
     display: flex;
     flex-direction: column;
 }
@@ -106,7 +106,7 @@ body {
 
 .project-link {
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 .project-link:hover {
@@ -121,7 +121,7 @@ body {
 }
 
 footer {
-    display: block;
+
     position:relative;
     left: 0;
     bottom: 0;
@@ -136,4 +136,25 @@ footer {
 footer h3 {
     font-size: 1.5em;
     margin-bottom: 8px;
+}
+
+#contact-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    margin: 0 8px;
+    color: #000000;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact-info a:hover {
+    cursor: pointer;
+    color: #0000FF;
 }
