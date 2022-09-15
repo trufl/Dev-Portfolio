@@ -4,8 +4,10 @@
 
 header {
     display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 100%;
+    width: 100%;
     padding: 3em 0;
-    margin-bottom: 3em;
     justify-content: space-between;
     align-items: center;
     color: #fff;
@@ -18,6 +20,7 @@ header h1 {
 
 .head-nav ul {
     display: flex;
+    flex: 1 0 100;
     flex-direction: row;
     list-style: none;
 }
@@ -33,70 +36,76 @@ header h1 {
     padding: 10px;
 }
 
-body {
+#avatar{
+    display: flex;
+    flex: 1 0 100%;
+    margin: 0 0 4em;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(196deg, #0000FF, #bfcfff);
+}
+
+#avatar-pic {
+    min-width: 300px;
+    min-height: 175px;
+    max-height: 500px;
+}
+
+#content {
     display: flex;
     flex-direction: column;
+    flex: 1 0 100%;
 }
 
 .content-card {
     margin: 0 2em 4em;
     padding: 2em;
-}
-
-
-.content-card h2 {
-    font-size: 2.5em;
-}
-
-#about-me {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    flex: 1 0 100%;
 }
 
-#my-info {
+.content-card h2 {
+    font-size: 45px;
+}
+
+.intro-content {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex: 1 1 20%;
+    margin-right: 5%;
+    justify-content: center;
     align-items: center;
-}
-
-#avatar-pic {
-    width: 300px;
-    height: 175px;
+    padding: 1em;
+    border-radius: 25px;
+    background-color: #bfcfffb0;
 }
 
 #my-text {
     display: flex;
     flex-wrap: wrap;
-    width: 75%;
-    background-color: #f2efef;
+    flex: 1 0 75%;
     padding: 2em;
-    flex-wrap: wrap;
-}
-
-#projects {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#projects h2 {
-    height: 45px;
-    width: 350px;
+    border-radius: 25px;
+    background-color: #f2efef;
 }
 
 #project-list {
     display: flex;
     flex-wrap: wrap;
+    flex: 1 0 75%;
     justify-content: center;
+    border-radius: 25px;
     background-color: #f2efef;
-    width: 75%;
 }
+
 
 #project-list li {
     display: flex;
-    width: 25%;
+    flex-wrap: wrap;
+    flex: 2 1 25%;
     justify-content: center;
     margin: 1em 2em;
     padding: 2em;
@@ -104,9 +113,24 @@ body {
     align-items: center;
 }
 
+.other-projects {
+    background-image: url(../images/blueprint.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#first-project {
+    font-weight: bolder;
+    background-image: url(../images/blueprint.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
 .project-link {
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 .project-link:hover {
@@ -115,25 +139,71 @@ body {
 }
 
 .project-link:focus {
-    background-color: aquamarine;
+    background-color: #bfcfff;
     border: #0000FF, 2px;
     padding: 2px;
 }
 
 footer {
-    display: block;
     position:relative;
     left: 0;
     bottom: 0;
     width: 100%;
     padding: 2em;
     text-align: center;
-    justify-content: center;
-    flex-direction: column;
     background-color: #f2efef;
 }
 
 footer h3 {
     font-size: 1.5em;
     margin-bottom: 8px;
+}
+
+#contact-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    margin: 0 8px;
+    color: #000000;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact-info a:hover {
+    cursor: pointer;
+    color: #0000FF;
+}
+
+/*576px for portrait phones*/
+@media screen and (max-width: 576px){
+    #contact-list {
+        flex-direction: column;
+    }
+}
+
+/*768px for tablets*/
+@media screen and (max-width: 768px){
+    header {
+        flex-direction: column;
+    }
+}
+
+/*992px for laptops*/
+@media screen and (max-width: 992px){
+    .content-card {
+        flex-direction: column;
+    }
+}
+
+/*1216px for large devices*/
+@media screen and (max-width: 1216px){
+    #projects {
+        flex-direction: column;
+    }
 }

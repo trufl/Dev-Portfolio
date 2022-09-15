@@ -22,11 +22,13 @@
     </header>
 
     <main id="content">
+        <section id="avatar">
+            <img id="avatar-pic" src="./assets/images/chunk.png" alt="Picture of chunk from the movie goonies">
+        </section>
         <section id="about-me" class="content-card">
-            <div id="my-info">
+            <section class="intro-content">
                 <h2>About Me</h2>
-                <img id="avatar-pic" src="./assets/images/chunk.png" alt="Picture of chunk from the movie goonies">
-            </div>
+            </section>
             <section id="my-text">
                 <p>Bootcamp student at UofA</p>
                 <p>
@@ -62,24 +64,35 @@
         </section>
 
         <section id="projects" class="content-card">
-            <h2>Current Projects</h2>
+            <section class="intro-content">
+                <h2>Current Projects</h2>
+            </section>
             <ul id="project-list">
-                <li>
+                <li id="first-project">
+                    <a class="project-link" target="_blank" href="https://trufl.github.io/prework-study-guide/">Prework Study Guide</a>
+                </li>
+                <li class="other-projects">
+                    <a class="project-link" target="_blank" href="https://trufl.github.io/code-refactor/#social-media-marketing">Horiseon Code Refactor</a>
+                </li>
+                <li class="other-projects">
                     <a class="project-link" target="_blank" href="#">placeholder</a>
                 </li>
-                <li>
+                <li class="other-projects">
                     <a class="project-link" target="_blank" href="#">placeholder</a>
                 </li>
-                <li>
+                <li class="other-projects">
                     <a class="project-link" target="_blank" href="#">placeholder</a>
                 </li>
-                <li>
+                <li class="other-projects">
                     <a class="project-link" target="_blank" href="#">placeholder</a>
                 </li>
-                <li>
+                <li class="other-projects">
                     <a class="project-link" target="_blank" href="#">placeholder</a>
                 </li>
-                <li>
+                <li class="other-projects">
+                    <a class="project-link" target="_blank" href="#">placeholder</a>
+                </li>
+                <li class="other-projects">
                     <a class="project-link" target="_blank" href="#">placeholder</a>
                 </li>
             </ul>
@@ -88,9 +101,15 @@
 
     <footer id="contact-me">
         <h3>Contact Me</h3>
-        <ul>
-            <li>
-                <p>GitHub: <a href="#">placeholder</a></p>
+        <ul id="contact-list">
+            <li class="contact-info">
+                <p>GitHub: <a target="_blank" href="https://github.com/trufl">github.com</a></p>
+            </li>
+            <li class="contact-info">
+                <p>Email: <a href="mailto:placeholder@gmail.com">placeholder@gmail.com</a></p>
+            </li>
+            <li class="contact-info">
+                <p>Phone: <a href="tel:5555555555">(555)-555-55555</a></p>
             </li>
         </ul>
     </footer>
