@@ -1,7 +1,9 @@
+/*Sets font family entire application*/
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 }
 
+/*Wraps header in a flexbox and sets basic styling for children elements*/
 header {
     display: flex;
     flex-wrap: wrap;
@@ -36,6 +38,7 @@ header h1 {
     padding: 10px;
 }
 
+/*Makes sure image is centered between header and content card beneath it and has a blue background color*/
 #avatar{
     display: flex;
     flex: 1 0 100%;
@@ -46,18 +49,21 @@ header h1 {
     background-image: linear-gradient(196deg, #0000FF, #bfcfff);
 }
 
+/*Sizes image*/
 #avatar-pic {
     min-width: 300px;
     min-height: 175px;
     max-height: 500px;
 }
 
+/*wraps the content cards in a flexbox*/
 #content {
     display: flex;
     flex-direction: column;
     flex: 1 0 100%;
 }
 
+/*Properly aligns items inside both about me and project content cards*/
 .content-card {
     margin: 0 2em 4em;
     padding: 2em;
@@ -68,10 +74,12 @@ header h1 {
     flex: 1 0 100%;
 }
 
+/*Sets fon size for content card headings*/
 .content-card h2 {
     font-size: 45px;
 }
 
+/*Aligns both content card headings*/
 .intro-content {
     display: flex;
     flex: 1 1 20%;
@@ -83,6 +91,7 @@ header h1 {
     background-color: #bfcfffb0;
 }
 
+/*Aligns text in about me section and sets background color to grey*/
 #my-text {
     display: flex;
     flex-wrap: wrap;
@@ -92,6 +101,7 @@ header h1 {
     background-color: #f2efef;
 }
 
+/*Aligns unorderd list in projects and sets background color to grey*/
 #project-list {
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +111,7 @@ header h1 {
     background-color: #f2efef;
 }
 
-
+/*Sizes individual list items*/
 #project-list li {
     display: flex;
     flex-wrap: wrap;
@@ -113,13 +123,15 @@ header h1 {
     align-items: center;
 }
 
+/*Sets background image for individual list items beggining with second list item. Makes sure backgorund images are smaller than
+the first list items background image. */
 .other-projects {
     background-image: url(../images/blueprint.png);
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
 }
-
+ /*Sets background image for first list item and sizes it so it is the largest in the unordered list*/
 #first-project {
     font-weight: bolder;
     background-image: url(../images/blueprint.png);
@@ -128,22 +140,19 @@ header h1 {
     background-size: cover;
 }
 
+/*Removes underline of links and sets fon color*/
 .project-link {
     text-decoration: none;
     color: #000000;
 }
 
+/*Sets font color to blue and changes mouse arrow to pointer when hovering over link*/
 .project-link:hover {
     cursor: pointer;
     color: #0000FF;
 }
 
-.project-link:focus {
-    background-color: #bfcfff;
-    border: #0000FF, 2px;
-    padding: 2px;
-}
-
+/*Styles footer so it stays at the bottom of the page*/
 footer {
     position:relative;
     left: 0;
@@ -154,27 +163,32 @@ footer {
     background-color: #f2efef;
 }
 
+/*Sizes footer heading*/
 footer h3 {
     font-size: 1.5em;
     margin-bottom: 8px;
 }
 
+/*Wraps unordered list in footer in a flex box*/
 #contact-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+/*Sets font color for regular text in list item and margin*/
 .contact-info {
     margin: 0 8px;
     color: #000000;
 }
 
+/*Sets font color for links and removes underline*/
 .contact-info a {
     text-decoration: none;
     color: #000000;
 }
 
+/*Sets font color to blue and changes mouse arrow to pointer when hovering over link*/
 .contact-info a:hover {
     cursor: pointer;
     color: #0000FF;

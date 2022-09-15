@@ -23,7 +23,7 @@ to the deployed application in GitHub pages: https://trufl.github.io/Dev-Portfol
 The following shows how the application should look at a width of 768 pixels:
 
     ```md
-    ![alt text](assets/images/screenshot.png)
+    ![screenshot](assets/images/screenshot.png)
     ```
 
 ## Credits
