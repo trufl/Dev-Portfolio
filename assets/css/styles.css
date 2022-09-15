@@ -5,7 +5,7 @@
 header {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 0 100;
+    flex: 1 0 100%;
     width: 100%;
     padding: 3em 0;
     justify-content: space-between;
@@ -62,6 +62,7 @@ header h1 {
     margin: 0 2em 4em;
     padding: 2em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     flex: 1 0 100%;
@@ -78,15 +79,16 @@ header h1 {
     justify-content: center;
     align-items: center;
     padding: 1em;
+    border-radius: 25px;
     background-color: #bfcfffb0;
 }
-
 
 #my-text {
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 75%;
     padding: 2em;
+    border-radius: 25px;
     background-color: #f2efef;
 }
 
@@ -95,17 +97,35 @@ header h1 {
     flex-wrap: wrap;
     flex: 1 0 75%;
     justify-content: center;
+    border-radius: 25px;
     background-color: #f2efef;
 }
 
+
 #project-list li {
     display: flex;
-    width: 25%;
+    flex-wrap: wrap;
+    flex: 2 1 25%;
     justify-content: center;
     margin: 1em 2em;
     padding: 2em;
     flex-direction: column;
     align-items: center;
+}
+
+.other-projects {
+    background-image: url(../images/blueprint.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#first-project {
+    font-weight: bolder;
+    background-image: url(../images/blueprint.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 .project-link {
@@ -162,16 +182,28 @@ footer h3 {
 
 /*576px for portrait phones*/
 @media screen and (max-width: 576px){
+    #contact-list {
+        flex-direction: column;
+    }
 }
 
 /*768px for tablets*/
 @media screen and (max-width: 768px){
+    header {
+        flex-direction: column;
+    }
 }
 
 /*992px for laptops*/
 @media screen and (max-width: 992px){
+    .content-card {
+        flex-direction: column;
+    }
 }
 
-/*1200px for large devices*/
-@media screen and (max-width: 1200px){
+/*1216px for large devices*/
+@media screen and (max-width: 1216px){
+    #projects {
+        flex-direction: column;
+    }
 }
